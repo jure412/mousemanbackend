@@ -224,7 +224,7 @@
             return response()->json(compact('token', 'user'));
         }
         public function helo(){
-            $user = DB::table('user')->all();
+            $user = DB::table('user')->first();
             return response()->json(compact('user'));
          }
     }
