@@ -224,7 +224,7 @@
             return response()->json(compact('token', 'user'));
         }
         public function helo(){
-            $user = User::find(22);
+            $user = User::all();
 
             return Response::json($user);
          }
