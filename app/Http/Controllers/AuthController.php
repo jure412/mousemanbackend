@@ -225,7 +225,7 @@
         }
         public function helo(){
             $user = DB::table('user')->where('id', 22);
-
+            dd($user);
             return response()->json($user);
          }
     }
