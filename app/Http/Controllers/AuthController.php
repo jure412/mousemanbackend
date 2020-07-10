@@ -224,6 +224,7 @@
             return response()->json(compact('token', 'user'));
         }
         public function helo(){
-            return response()->json('hello');
+            $check = User::table('users')->where('id', 22)->first();
+            return response()->json(compact('check'));
          }
     }
