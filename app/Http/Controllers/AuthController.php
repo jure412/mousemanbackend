@@ -224,8 +224,8 @@
             return response()->json(compact('token', 'user'));
         }
         public function helo(){
-            $product_id=User::get(22);
+            $user = User::find(22);
 
-            return Response::json($product_id);
+            return Response::json($user);
          }
     }
