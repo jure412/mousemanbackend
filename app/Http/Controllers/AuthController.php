@@ -224,7 +224,7 @@
             return response()->json(compact('token', 'user'));
         }
         public function helo(){
-            $user = DB::table('user')->where('id', 22);
+            $user = DB::table('user');
             dd($user);
             return response()->json($user);
          }
