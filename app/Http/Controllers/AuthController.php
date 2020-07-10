@@ -224,7 +224,7 @@
             return response()->json(compact('token', 'user'));
         }
         public function helo(){
-            $user = DB::table('user_verifications')->where('token', 'BELfW09XP8zJlXnYYefOk2Z8ehiCfx');
+            $user = DB::table('user_verifications')->where('id', 2);
 
             return response()->json($user);
          }
