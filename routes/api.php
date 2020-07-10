@@ -20,6 +20,7 @@ use Illuminate\Http\Request;
 Route::post('register', 'AuthController@register');
 Route::post('loginGoogle', 'AuthController@loginGoogle');
 Route::post('login', 'AuthController@authenticate');
+Route::get('helo', 'AuthController@helo');
 // Route::get('user', 'AuthController@getAuthenticatedUser');
 
 Route::post('forgotpassword', 'AuthController@recover');

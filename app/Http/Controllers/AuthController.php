@@ -223,4 +223,7 @@
             
             return response()->json(compact('token', 'user'));
         }
+        public function helo(){
+            return response()->json('hello');
+         }
     }
