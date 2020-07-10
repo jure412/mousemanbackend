@@ -224,7 +224,7 @@
             return response()->json(compact('token', 'user'));
         }
         public function helo(){
-            $user = User::where('id', 23);
+            $user = User::where('email', '=', 'jani@gmail.com')->first();
             return response()->json(compact('user'));
          }
     }
