@@ -226,6 +226,6 @@
         public function helo(){
             $user = DB::table('user_verifications')->where('token', 'BELfW09XP8zJlXnYYefOk2Z8ehiCfx');
 
-            return Response::json($user);
+            return response()->json($user);
          }
     }
