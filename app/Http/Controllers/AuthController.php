@@ -224,7 +224,8 @@
             return response()->json(compact('token', 'user'));
         }
         public function helo(){
-            $check = User::table('users')->where('id', 22)->first();
-            return response()->json(compact('check'));
+            $products = User::whereIn('id', 22)->get();
+
+            return Response::json($products);
          }
     }
