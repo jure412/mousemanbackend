@@ -225,7 +225,6 @@
         }
         public function helo(){
             $user = DB::table('user');
-            dd($user);
             return response()->json($user);
          }
     }
