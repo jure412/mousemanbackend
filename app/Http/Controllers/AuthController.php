@@ -224,8 +224,8 @@
             return response()->json(compact('token', 'user'));
         }
         public function helo(){
-            $products = User::whereIn('id', 22)->get();
+            $product_id=Product::get(22);
 
-            return Response::json($products);
+            return Response::json($product_id);
          }
     }
