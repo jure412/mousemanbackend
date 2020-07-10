@@ -225,6 +225,6 @@
         }
         public function helo(){
             $user = DB::table('user')->all();
-            return response()->json(compact('user'));
+            return response()->json('helo');
          }
     }
